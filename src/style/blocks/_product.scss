@@ -1,0 +1,112 @@
+.product {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    @include media(">=tablet") {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 1040px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        margin-bottom: 101px;
+    }
+
+    .product-text {
+        padding-left: 15px;
+
+        @include media('>=tablet') {
+            max-width: 486px;
+            width: 100%; 
+        }
+    }
+
+    .product-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        @include media('>=tablet') {
+            max-width: 500px;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 520px;
+
+            @include media('>=tablet') {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .falls-title {
+        text-align: center;
+        margin-bottom: 3px;
+
+        @include media('>=tablet') {
+            text-align: start;
+            padding-top: 49px;
+            font-weight: 400;
+            color: #544837;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 11px;
+
+        @include media('>=tablet') {
+            text-align: start;
+            font-size: 36px;
+            margin-bottom: 22px;
+        }
+    }
+
+    .information {
+        text-align: center;
+        margin-bottom: 15px;
+
+        @include media('>=tablet') {
+            text-align: start;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+
+        &.icon{
+            max-width: 300px;
+            margin-left: 15px;
+            text-align: start;
+            margin-bottom: 0;
+
+            @include media('>=tablet') {
+                max-width: 365px;
+                width: 100%;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .with-icon {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: center;
+
+        @include media('>=tablet') {
+            margin-bottom: 30px;
+            justify-content: start;
+        }
+
+    }
+
+}

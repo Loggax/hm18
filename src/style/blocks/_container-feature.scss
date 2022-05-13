@@ -1,0 +1,108 @@
+.container-feature {
+    margin: 0 auto;
+    margin-bottom: 73px;
+
+    @include media('>=tablet') {
+        max-width: 1040px;
+        width: 100%;
+        padding: 0 15px;
+        margin-bottom: 146px;
+    }
+
+    .feature-hero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        @include media('>=tablet') {
+            margin-bottom: 54px;
+        }
+    }
+
+    .feature-text-holder {
+        display: inline-block;
+        max-width: 539px;
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    p {
+        margin: 0;
+        display: inline-block;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @include media('>=tablet') {
+            flex-direction: row;
+        }
+
+    }
+
+    .c1 {
+        margin-bottom: 30px;
+
+        @include media('>=tablet') {
+            display: inline-block;
+            width: 25%;
+            margin-bottom: 60px;
+        }
+        
+    }
+
+    .icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        @include media('>=tablet') {
+            justify-content: start;
+            margin-bottom: 30px;
+        }
+    }
+
+    .card-text-holder {
+        text-align: center;
+        margin-bottom: 7px;
+
+        @include media ('>=tablet') {
+            text-align: start;
+            margin-bottom: 13px;
+        }
+    }
+
+    .card-desc {
+        text-align: center;
+        max-width: 240px;
+        width: 100%;
+        margin: 0 auto;
+
+        @include media ('>=tablet') {
+            text-align: start;
+            margin: 0;
+        }
+    }
+
+    .card-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-btn-text {
+        display: inline-block;
+        padding: 15px 33px;
+        background-color: $orange-btn;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #fff;
+    }
+    
+
+}
